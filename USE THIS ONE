@@ -1,0 +1,24 @@
+import numpy as np
+from pandas import Series, DataFrame
+import pandas as pd
+
+arr = np.array([[1,2,np.nan],[np.nan,3,4]])
+arr
+dframe1 = DataFrame(arr,index=['A','B'], columns=['One','Two','Three'])
+dframe1
+dframe1.sum()
+#Now lets check correlation and covariance on some stock prices!
+
+#Pandas can get info off the web
+import pandas.io.data as pdweb
+
+#Set datetime for date input
+import datetime
+
+#Get the closing prices
+
+import pandas.io.data as pdweb
+import datetime
+
+import pandas_datareader as pdr
+import datetime
